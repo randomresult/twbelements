@@ -1,0 +1,4 @@
+tt_content.list =< lib.ce_twbelements
+tt_content.list {
+  templateName = FE_List
+}

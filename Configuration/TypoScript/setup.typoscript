@@ -1,0 +1,9 @@
+@import 'EXT:fluid_styled_content/Configuration/TypoScript/setup.typoscript'
+
+@import 'EXT:twbelements/Configuration/TypoScript/config/'
+@import 'EXT:twbelements/Configuration/TypoScript/fluid/'
+@import 'EXT:twbelements/Configuration/TypoScript/form/'
+@import 'EXT:twbelements/Configuration/TypoScript/page/'
+@import 'EXT:twbelements/Configuration/TypoScript/tt_content/'
+
+@import 'EXT:twbelements/Configuration/TypoScript/ContentElements/'

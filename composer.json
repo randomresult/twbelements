@@ -1,0 +1,32 @@
+{
+	"name": "Analogde/Twbelements",
+	"description": "TYPO3 Provider Extension",
+	"type": "typo3-cms-extension",
+	"require": {
+		"typo3/cms-frontend": "^9"
+	},
+	"authors": [
+		{
+			"name": "Boris Schauer",
+			"email": "me@bschauer.de"
+		},
+		{
+			"name": "Analog",
+			"email": "info@analog.de"
+		},
+		{
+			"name": "Medienagenten",
+			"email": "info@medienagenten.de"
+		}
+	],
+	"autoload": {
+		"psr-4": {
+			"Analogde\\Twbelements\\": "Classes"
+		}
+	},
+	"extra": {
+		"branch-alias": {
+			"dev-master": "1.0.0"
+		}
+	}
+}

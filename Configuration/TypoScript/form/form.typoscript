@@ -1,0 +1,17 @@
+@import 'EXT:form/Configuration/TypoScript/setup.typoscript'
+
+plugin.tx_form {
+  settings {
+    yamlConfigurations {
+      1815 = EXT:twbelements/Configuration/Yaml/FormConfig.yaml
+    }
+  }
+}
+
+module.tx_form {
+  settings {
+    yamlConfigurations {
+      1815 = EXT:twbelements/Configuration/Yaml/FormConfig.yaml
+    }
+  }
+}

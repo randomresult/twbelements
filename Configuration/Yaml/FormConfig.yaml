@@ -1,0 +1,33 @@
+TYPO3:
+  CMS:
+    Form:
+      persistenceManager:
+        allowSaveToExtensionPaths: true
+        allowDeleteFromExtensionPaths: false
+        allowedExtensionPaths:
+          1815: EXT:twbelements/Resources/Private/Forms/Yaml/
+      mixins:
+        ########### FORM ELEMENT MIXINS ###########
+        formElementMixins:
+          FileUploadMixin:
+            formEditor:
+              predefinedDefaults:
+                properties:
+                  saveToFileMount: '1:/form-uploads/'
+              editors:
+                400:
+                  selectOptions:
+                    10:
+                      value: '1:/form-uploads/'
+                      label: '1:/form-uploads/'
+      prototypes:
+        standard:
+          formElementsDefinition:
+            Form:
+              renderingOptions:
+                templateRootPaths:
+                  200: 'EXT:twbelements/Resources/Private/Forms/Templates/'
+                partialRootPaths:
+                  200: 'EXT:twbelements/Resources/Private/Forms/Partials/'
+                layoutRootPaths:
+                  200: 'EXT:twbelements/Resources/Private/Forms/Layouts/'

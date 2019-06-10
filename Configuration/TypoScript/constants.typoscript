@@ -1,0 +1,31 @@
+## Constants ##
+@import 'EXT:fluid_styled_content/Configuration/TypoScript/constants.typoscript'
+
+page {
+  # customsubcategory=100=General
+  template {
+    # cat=twbelements: Settings/100/150; type=string; label=Layout Root Path: Path to layouts
+    layoutRootPath = EXT:twbelements/Resources/Private/Page/Layouts/
+    # cat=twbelements: Settings/100/160; type=string; label=Partial Root Path: Path to partials
+    partialRootPath = EXT:twbelements/Resources/Private/Page/Partials/
+    # cat=twbelements: Settings/100/170; type=string; label=Template Root Path: Path to templates
+    templateRootPath = EXT:twbelements/Resources/Private/Page/Templates/
+  }
+  # customsubcategory=300=Meta
+  meta {
+    # cat=twbelements: Meta/400/100; type=string; label=viewport
+    viewport = width=device-width, initial-scale=1
+    # cat=twbelements: Meta/400/120; type=string; label=apple-mobile-web-app-capable
+    apple-mobile-web-app-capable = yes
+    # cat=twbelements: Meta/400/140; type=string; label=google
+    google = translate
+  }
+}
+
+# customsubcategory=200=Favicon
+# cat=twbelements: Settings/100/100; type=string; label= Path to Favicon (PNG)
+favicon = EXT:twbelements/Resources/Public/Images/Icons/Device/Icon.png
+
+# customsubcategory=120=Google Webmaster/Analytics
+# cat=twbelements: Google Tools/200/100; type=string; label= Google Webmaster ID - (content="xxxxxxxx")
+googlewebmaster =

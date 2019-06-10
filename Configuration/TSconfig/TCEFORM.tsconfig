@@ -1,0 +1,122 @@
+TCEFORM {
+  pages {
+    // General
+    nav_title.disabled = 0
+    subtitle.disabled = 1
+
+    // Metadata
+    abstract.disabled = 1
+    author.disabled = 1
+    author_email.disabled = 1
+    lastUpdated.disabled = 1
+    keywords.disabled = 1
+
+    // Appearance
+    layout.disabled = 1
+    newUntil.disabled = 1
+
+    // Behavior
+    cache_timeout.disabled = 1
+    cache_tags.disabled = 1
+    no_cache.disabled = 0
+
+    // Resources
+    TSconfig.disabled = 0
+
+    // Categories
+    categories.disabled = 1
+
+    // Access
+    fe_group.disabled = 1
+    fe_login_mode.disabled = 1
+
+    // Notes
+    rowDescription.disabled = 1
+  }
+
+  tt_content {
+    header_layout {
+      altLabels {
+        1 = Headline H1
+        2 = Headline H2
+        3 = Headline H3
+        4 = Headline H4
+        5 = Headline H5
+        6 = Headline H6
+      }
+
+      types {
+        gridelements_pi1 {
+          altLabels {
+            0 = Headline Large
+            1 = Headline Medium
+            2 = Headline Small
+          }
+
+          removeItems = 3,4,5,6
+        }
+      }
+    }
+
+    imageorient {
+      removeItems = 1,2,9,10
+    }
+
+    imagecols {
+      keepItems = 1,2,3,4,6
+    }
+
+    frame_class {
+      removeItems = ruler-before, ruler-after, indent, indent-left, indent-right, indent-righ
+      addItems {
+        container = Container
+      }
+    }
+
+    layout.disabled = 1
+    space_before_class.disabled = 1
+    space_after_class.disabled = 1
+    linkToTop.disabled = 1
+  }
+}
+
+TCAdefaults.tt_content.frame_class = none
+
+
+## Disable FSC cTypes
+TCEFORM.tt_content.CType.removeItems := addToList(html)
+# TCEFORM.tt_content.CType.removeItems := addToList(shortcut)
+TCEFORM.tt_content.CType.removeItems := addToList(header)
+TCEFORM.tt_content.CType.removeItems := addToList(text)
+TCEFORM.tt_content.CType.removeItems := addToList(textpic)
+TCEFORM.tt_content.CType.removeItems := addToList(textmedia)
+TCEFORM.tt_content.CType.removeItems := addToList(bullets)
+TCEFORM.tt_content.CType.removeItems := addToList(table)
+TCEFORM.tt_content.CType.removeItems := addToList(uploads)
+TCEFORM.tt_content.CType.removeItems := addToList(menu)
+TCEFORM.tt_content.CType.removeItems := addToList(div)
+TCEFORM.tt_content.CType.removeItems := addToList(mailform)
+TCEFORM.tt_content.CType.removeItems := addToList(form_formframework)
+TCEFORM.tt_content.CType.removeItems := addToList(login)
+TCEFORM.tt_content.CType.removeItems := addToList(image)
+
+## Disable FSC menu-cTypes
+TCEFORM.tt_content.CType.removeItems := addToList(menu_abstract)
+TCEFORM.tt_content.CType.removeItems := addToList(menu_categorized_content)
+TCEFORM.tt_content.CType.removeItems := addToList(menu_categorized_pages)
+TCEFORM.tt_content.CType.removeItems := addToList(menu_pages)
+TCEFORM.tt_content.CType.removeItems := addToList(menu_recently_updated)
+TCEFORM.tt_content.CType.removeItems := addToList(menu_related_pages)
+TCEFORM.tt_content.CType.removeItems := addToList(menu_section)
+TCEFORM.tt_content.CType.removeItems := addToList(menu_section_pages)
+TCEFORM.tt_content.CType.removeItems := addToList(menu_sitemap)
+TCEFORM.tt_content.CType.removeItems := addToList(menu_sitemap_pages)
+TCEFORM.tt_content.CType.removeItems := addToList(menu_subpages)
+
+## Disable hide at copy
+# TCEMAIN.table.tt_content.disableHideAtCopy = 1
+# TCEMAIN.table.pages.disableHideAtCopy = 1
+
+## Copys will *not* have "(copy)" appended
+# TCEMAIN.table.pages.disablePrependAtCopy = 1
+# TCEMAIN.table.tt_content.disablePrependAtCopy = 1

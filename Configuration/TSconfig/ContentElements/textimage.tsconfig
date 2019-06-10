@@ -1,0 +1,22 @@
+mod {
+  wizards {
+    newContentElement {
+      wizardItems {
+        common {
+          elements {
+            twbelements_textimage {
+              iconIdentifier = default-icon
+              title = Text with Image
+              description = Image positions: Top, Bottom, Left, Right
+              tt_content_defValues {
+                CType = twbelements_textimage
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  web_layout.tt_content.preview.twbelements_textimage = EXT:twbelements/Resources/Private/ContentElements/BackendPreviews/BE_Textimage.html
+}
